@@ -1,9 +1,9 @@
 import Link from "next/link";
-
-export default function Home() {
+import React from "react";
+const Topbar: React.FC = () => {
   return (
-    <div className="navbar bg-base-100 ">
-      <div className="navbar-start ">
+    <div className="navbar bg-base-100">
+      <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -73,4 +73,5 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+export default Topbar;

@@ -18,10 +18,36 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+.sidebar {
+  @apply bg-gray-50 text-base-content w-64;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-top: 1px;
+  height: 902px;
+}
+.sidebar ul {
+  @apply p-4 space-y-4;
+}
+.sidebar li {
+  @apply rounded-md px-2 py-1 text-gray-700 hover:text-indigo-600 hover:bg-gray-200;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.navbar .nav {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .nav-item {
+  margin-right: 1rem;
+}
+.navbar .nav-link {
+  color: #333333;
+  font-weight: 600;
+}
+.navbar .nav-link:hover {
+  color: #000000;
 }
